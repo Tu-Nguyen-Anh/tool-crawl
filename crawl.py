@@ -20,7 +20,7 @@ from typing import Dict, List, Optional
 import pickle
 
 # ==================== CONFIG ====================
-API_BASE = "http://localhost:8888/api/v1"
+API_BASE = "http://62.146.237.219:8188/api/v1"
 LOGIN_URL = f"{API_BASE}/auth/login"
 SOURCES_URL = f"{API_BASE}/sources/all-with-topics"
 
@@ -60,7 +60,7 @@ atexit.register(save_bloom)
 # ==================== DATABASE ====================
 try:
     conn = psycopg2.connect(
-        host="localhost",
+        host="62.146.237.219",
         database="news_db",
         user="postgres",
         password="postgres",

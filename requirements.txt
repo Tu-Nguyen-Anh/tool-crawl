@@ -1,0 +1,4 @@
+feedparser
+requests
+psycopg2-binary
+pybloom-live
