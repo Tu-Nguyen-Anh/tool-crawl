@@ -29,7 +29,7 @@ SOURCES_URL = f"{API_BASE}/sources/all-with-topics"
 USERNAME = "admin"
 PASSWORD = "News@2025"
 
-POLL_INTERVAL = 60
+POLL_INTERVAL = 300
 MAX_WORKERS = 8
 BLOOM_FILE = "multi_source_seen.bloom"
 
