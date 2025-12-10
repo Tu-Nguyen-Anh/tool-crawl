@@ -60,12 +60,13 @@ atexit.register(save_bloom)
 # ==================== DATABASE ====================
 try:
     conn = psycopg2.connect(
-        host="62.146.237.219",
-        database="news_db",
-        user="postgres",
-        password="postgres",
-        port=5432
-    )
+    host="172.17.0.1",
+    database="news_db",
+    user="postgres",
+    password="postgres",
+    port=54123
+)
+
     conn.autocommit = False
     cur = conn.cursor()
 
