@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  rss-crawler:
+    image: rss_crawler_v8:latest
+    container_name: rss_crawler_v8
+    restart: unless-stopped
+
+    environment:
+      - TZ=Asia/Ho_Chi_Minh
+
+    volumes:
+      - ./multi_source_seen.bloom:/app/multi_source_seen.bloom
+
+    # KHÔNG cần expose port vì crawler chỉ outbound
