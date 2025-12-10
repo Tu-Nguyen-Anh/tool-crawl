@@ -26,4 +26,4 @@ RUN useradd -m crawler
 USER crawler
 
 # Chạy crawler
-CMD ["python", "crawler.py"]
+CMD ["python", "crawl.py"]
