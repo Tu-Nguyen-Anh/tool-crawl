@@ -20,7 +20,9 @@ from typing import Dict, List, Optional
 import pickle
 
 # ==================== CONFIG ====================
-API_BASE = "http://62.146.237.219:8188/api/v1"
+# API_BASE = "http://62.146.237.219:8188/api/v1"
+API_BASE = "http://172.17.0.1:8188/api/v1"
+
 LOGIN_URL = f"{API_BASE}/auth/login"
 SOURCES_URL = f"{API_BASE}/sources/all-with-topics"
 
